@@ -4,7 +4,11 @@
   "description": "LinkBuilder is a javascript tool to automate links generation for text keywords.",
   "main": "src/link-builder.js",
   "scripts": {
-    "test": "npm test"
+    "test": "ava src/spec.js",
+    "release": "babel src --presets babel-preset-env --out-dir release --source-maps --ignore ./src/spec.js --minified",
+    "prepublish": "npm run release",
+    "coverage": "source .generate-coverage.sh",
+    "coverage-to-codacy": "cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage"
   },
   "repository": {
     "type": "git",
@@ -23,6 +27,18 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/teles/link-builder/issues"
+  },
+  "devDependencies": {
+    "ava": "0.22.0",
+    "babel": "6.23.0",
+    "babel-cli": "6.26.0",
+    "babel-minify": "0.2.0",
+    "babel-preset-env": "1.6.0",
+    "eslint": "4.6.1",
+    "istanbul": "0.4.5",
+    "nyc": "11.2.1",
+    "codacy-coverage": "2.0.2",
+    "remap-istanbul": "0.9.5"
   },
   "homepage": "https://github.com/teles/link-builder#readme"
 }
