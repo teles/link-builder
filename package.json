@@ -1,0 +1,28 @@
+{
+  "name": "link-builder",
+  "version": "0.5.0",
+  "description": "LinkBuilder is a javascript tool to automate links generation for text keywords.",
+  "main": "src/link-builder.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teles/link-builder.git"
+  },
+  "keywords": [
+    "link-building",
+    "javascript",
+    "es6",
+    "parser",
+    "text",
+    "SEO",
+    "SPA"
+  ],
+  "author": "teles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teles/link-builder/issues"
+  },
+  "homepage": "https://github.com/teles/link-builder#readme"
+}
