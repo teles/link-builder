@@ -8,8 +8,13 @@
   The power to generate your html anchors using javascript.
 </p>
 <p align="center">
-  <strong>Perfect for SPAs and SEO.</strong>
+  <p align="center"><strong>Perfect for SPAs and SEO.</strong></p>
+  <p align="center">
+    <a href="https://badge.fury.io/js/link-builder"><img src="https://badge.fury.io/js/link-builder.svg" alt="npm version" height="18"></a>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  </p>
 </p> 
+
 
 ## Common usage
 Coming soon
@@ -28,17 +33,3 @@ Coming soon
 
 ## License
 MIT - Jota Teles - 2017
-
-## Roadmap
-Coming soon
-
-| Tarefa                                                                                | Prioridade |
-|---------------------------------------------------------------------------------------|------------|
-| Resolver bug que duplica texto quando mais de um replacement é passado                | Muito alta |
-| Adicionar parametro para adição de atributos na tag <a> gerada                        | Alta       |
-| Adicionar suporte a saída formato markdown ao invés de html                           | Baixa      |
-| Adicionar exemplo de utilização com angular                                           | Média      |
-| Adicionar testes unitários                                                            | Muito alta |
-| Adicionar suporte a array com keywords ao invés de apenas uma keyword por replacement | Média      |
-| Adicionar opção de pegar palavras completas ou apenas trechos                         | Alta       |
-| Adicionar suporte explícito a regex no replacements.keywords                          | Média      |
