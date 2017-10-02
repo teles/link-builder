@@ -1,6 +1,6 @@
 {
   "name": "link-builder",
-  "version": "0.6.0",
+  "version": "0.6.5",
   "description": "LinkBuilder is a javascript tool to automate links generation for text keywords.",
   "main": "release/link-builder.js",
   "scripts": {

@@ -102,8 +102,15 @@ const quotes = [
     lordActonInsensitive, gandhi, gautama];
 
 quotes.forEach((quote) => {
-   test(quote.description, t => {
-      let output = LinkBuilder(quote.input, quote.replacements);
-      t.deepEqual(output, quote.output);
-   });
+   test(`NOT USING new: ${quote.description}`, t => {
+        let output = LinkBuilder(quote.input, quote.replacements);
+        t.deepEqual(output, quote.output);
+    });
+});
+
+quotes.forEach((quote) => {
+    test(`USING new: ${quote.description}`, t => {
+        let link = new LinkBuilder(quote.input, quote.replacements);
+        t.deepEqual(link.output, quote.output);
+    });
 });
