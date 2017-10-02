@@ -17,6 +17,9 @@
 
 
 ## Common usage
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/edd7aadb99f2426592d0b9a4aeb5f5aa)](https://www.codacy.com/app/josetelesmaciel/link-builder?utm_source=github.com&utm_medium=referral&utm_content=teles/link-builder&utm_campaign=badger)
+
 Coming soon
 
 ## Installation
