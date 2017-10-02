@@ -61,7 +61,7 @@ Or get the [latest version from unpkg.com](https://unpkg.com/link-builder@0.6.5/
 There are two mandatory parameters for `LinkBuilder`.
 
 <img src="https://placeholdit.imgix.net/~text?txtsize=22&txtclr=fff&bg=28a831&txt=Content&w=100&h=48" align="left">
-<img src="https://placeholdit.imgix.net/~text?txtsize=22&txtclr=fff&bg=cb8c32&txt=Replacements&w=150&h=48">
+<img src="https://placeholdit.imgix.net/~text?txtsize=22&txtclr=fff&bg=fbae3c&txt=Replacements&w=150&h=48">
 
 ``content``:
 
