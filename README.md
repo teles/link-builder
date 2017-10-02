@@ -19,13 +19,67 @@
 
 ## Common usage
 
-Coming soon
+The `LinkBuilder` function can be used as a constructor or literal function to parse any `String` or `HTMLElement` to include html anchors in it.
+
+Use `LinkBuilder` to easily include anchors to your markup, such as:
+
+**Before LinkBuilder:**  
+```html 
+<p> In the field of search engine optimization, link building describes actions aimed at increasing the number and quality of inbound links to a webpage with the goal of increasing the search engine rankings of that page or website.</p>
+```
+
+**After LinkBuilder:**
+```html 
+<p> In the field of <a href=\"https://en.wikipedia.org/wiki/Search_engine_optimization\">search engine optimization</a>, link building describes actions aimed at increasing the number and quality of <a href=\"https://en.wikipedia.org/wiki/Backlink\">inbound links</a> to a webpage with the goal of increasing the search engine rankings of that page or website.</p>
+```
+
+**Used `LinkBuilder` configuration to create above result:**
+
+```javascript
+new LinkBuilder(htmlContent, [{
+          anchor: "https://en.wikipedia.org/wiki/Search_engine_optimization",
+          keyword: "search engine optimization"
+        },
+        {
+          anchor: "https://en.wikipedia.org/wiki/Backlink",
+          keyword: "inbound links"
+        }
+    ]) 
+```
+
 
 ## Installation
-Coming soon
+
+```bash
+npm install --save link-builder 
+```
+
+Or get the [latest version from unpkg.com](https://unpkg.com/link-builder@0.6.5/release/link-builder.js). 
 
 ## Parameters
-Coming soon
+
+There are two mandatory parameters for `LinkBuilder`.
+
+<img src="https://placeholdit.imgix.net/~text?txtsize=22&txtclr=fff&bg=28a831&txt=Content&w=100&h=48" align="left">
+<img src="https://placeholdit.imgix.net/~text?txtsize=22&txtclr=fff&bg=cb8c32&txt=Replacements&w=150&h=48">
+
+``content``:
+
+> is any `String` or `HTMLElement` used as input for `LinkBuilder`. 
+
+``replacements``:
+
+> is a Array of Objects containing each one optional and required properties:
+
+### Properties for each replacement:
+
+| property    | required | description                                             | example                                  |
+|-------------|----------|---------------------------------------------------------|------------------------------------------|
+| anchor      | true     | anchor text to be used as href                          | https://en.wikipedia.org/wiki/JavaScript |
+| keyword     | true     | String keyword to be matched                            | Javascript                               |
+| insensitive | false    | Boolean to on/off case insentive match. Default `false` | true                                     |
+| max         | false    | Number. Max number of matches for `keyword`.            | 3                                        |
+
 
 ## Examples
 Coming soon
