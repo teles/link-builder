@@ -1,10 +1,11 @@
 function LinkBuilder(content, replacements){
+    "use strict";
 
     replacements.forEach(replacement => {
         let counter = 0;
         let patternModifiers = replacement.insensitive ? "gi" : "g";
         let pattern = new RegExp(`\\b${replacement.keyword}\\b`, patternModifiers);
-        content = content.replace(pattern, (match) =>{
+        content = content.replace(pattern, match => {
             let hasNoMax = typeof replacement.max === "undefined";
             if(replacement.max > counter || hasNoMax) {
                 counter++;
@@ -16,4 +17,4 @@ function LinkBuilder(content, replacements){
     return content;
 }
 
-module.exports = LinkBuilder;
+module.exports = LinkBuilder; // eslint-disable-line no-undef

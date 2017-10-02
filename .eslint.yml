@@ -1,7 +1,10 @@
 env:
     browser: true
+    es6: true
 extends: 'eslint:recommended'
 rules:
+    detect-non-literal-regexp:
+        - off
     indent:
         - error
         - 4
